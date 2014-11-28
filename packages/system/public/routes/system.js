@@ -45,14 +45,16 @@ angular.module('mean.system').provider('$meanState', ['$stateProvider', '$viewPa
 angular.module('mean.system').config(['$meanStateProvider', '$urlRouterProvider',
   function($meanStateProvider, $urlRouterProvider) {
     // For unmatched routes:
-    $urlRouterProvider.otherwise('/');
+/*
+      $urlRouterProvider.otherwise('/');
 
     // states for my app
     $meanStateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'system/views/index.html'
-      });
+    .state('home', {
+      url: '/',
+      templateUrl: 'system/views/index.html'
+    });
+    */
   }
 ]).config(['$locationProvider',
   function($locationProvider) {

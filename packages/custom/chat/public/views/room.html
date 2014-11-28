@@ -1,0 +1,26 @@
+<div class='container'>
+<div class="row-fluid" >
+                <div class="col-md-4">
+                       <h3>User list</h3>
+                        <div class='row' id='listUsers'>
+                            <div ng-repeat='user in connectedUsers'><span>{{ user.username }}</span><br /></div>
+                        </div>
+                </div>
+                <div class="col-md-8">
+                   
+                     <h3>Messages</h3>
+                    
+                     <div class='row' id='listMessage'>
+                         <div ng-repeat='msg in historyMessages'><span>{{ msg.message }}</span><br /></div>
+                         
+                    </div>
+                     <div class='row' id='postMessage'>
+                        
+                         <input type='text' name='messageContent' id='messageContent'/>
+                         <button type='button' name='sendMsgButton' id='sendMsgButton' >Send Message</button>
+                         <button ng-click="addPost()">Post</button>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
